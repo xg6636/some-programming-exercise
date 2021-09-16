@@ -20,3 +20,12 @@
   (cond 
     ((null (car lst)) '())
     (t (cons (_car lst) (transpose_t (_cdr lst))))))
+
+(defun cartesian_prod (lst1 lst2) 
+  (defun _cp (a lst) 
+    (cond 
+      ((null lst) '())
+      (t (cons (list a (car lst)) (_cp a (cdr lst))))))
+  (cond 
+    ((null lst1) '())
+    (t (append (_cp (car lst1) lst2) (cartesian_prod (cdr lst1) lst2)))))
