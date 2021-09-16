@@ -19,3 +19,14 @@
     ((null lst) '())
     ((> 3 (length lst)) '())
     (t (append (_betw2 lst) (between (cdr lst))))))
+
+(defun twice (lst1 lst2) 
+  (defun _count (a lst) 
+    (cond 
+      ((null lst) 0)
+      (t
+       (+ (if (= (car lst) a) 1 0) (_count a (cdr lst))))))
+  (cond 
+    ((null lst1) 0)
+    (t
+     (+ (if (= 2 (_count (car lst1) lst2)) 1 0) (twice (cdr lst1) lst2)))))
