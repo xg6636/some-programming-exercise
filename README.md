@@ -1,4 +1,4 @@
-# some-computer-science-exercise
+# some-programming-exercise
 
 Some answers of computer science exercises.
 
