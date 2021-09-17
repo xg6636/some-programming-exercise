@@ -1,6 +1,6 @@
 # some-programming-exercise
 
-Some answers of computer science exercises.
+Some answers to computer science exercises.
 
 Now I have 6 exercises,for exercise no. 1 to 6,the function `if` is allowed to use.
 
